@@ -1,0 +1,79 @@
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.App {
+    padding-top: 40px;
+}
+
+._grid {
+    display: grid;
+    grid-template-columns: 3fr repeat(5, 1fr);
+    column-gap: 20px;
+}
+
+.products {
+    &-header {
+        margin-bottom: 16px;
+        &__item {
+            font-size: 16px;
+        }
+    }
+    &-list {
+        margin-bottom: 16px;
+    }
+}
+
+.product {
+    &__field {
+        & input {
+            width: calc(100% - 20px);
+            border: 1px solid #C9C9C9;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 10px 7px;
+        }
+    }
+}
+
+.product {
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.button {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(73, 121, 255);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 18px;
+    &:hover {
+        background-color: darken(rgb(73, 121, 255), 10%);
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.cooked {
+    width: 70px;
+    margin-right: 10px;
+    border: 1px solid #C9C9C9;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 7px;
+}
+
+.total {
+    &-label {
+        margin-right: 10px;
+    }
+}
